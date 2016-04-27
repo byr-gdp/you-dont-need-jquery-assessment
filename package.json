@@ -1,0 +1,16 @@
+{
+  "name": "you-dont-need-jquery-assessment",
+  "version": "0.0.1",
+  "description": "assessment for you dont't need jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "author": "byr-gdp",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "jquery": "^2.2.3",
+    "mocha": "^2.4.5"
+  }
+}
