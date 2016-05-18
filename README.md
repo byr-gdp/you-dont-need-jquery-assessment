@@ -7,3 +7,12 @@
 另外，对于 index.html，目前主要是 div#mocha 来输出测试结果，可能需要进一步查文档来了解其他细节，比如 div#message 等
 
 document.getElement... 等操作应该限定在 div#test 中
+
+
+## Plan
+
+2016-04-29： Query Selector
+2016-04-30： CSS
+2016-05-01： Utilities
+
+Events 待定，期间考虑测试按类别分类。

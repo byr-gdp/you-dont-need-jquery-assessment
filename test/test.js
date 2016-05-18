@@ -18,10 +18,8 @@ describe('Query Selector', function() {
   });
 
   it('should query by class', function() {
-    console.log(answers.queryByClass().length);
     answers.queryByClass().length.should.equal($('.css').length);
     for (var i = 0, len = answers.queryByClass().length; i < len; i++) {
-      console.log(i);
       answers.queryByClass()[i].should.equal($('.css')[i]);
     }
   });
@@ -39,15 +37,18 @@ describe('Query Selector', function() {
 
   describe('Find sth.', function() {
     it('should find nodes', function() {
-     
+      answers.findNodes().length.should.equal($('li').length);
+      for (var i = 0, len = answers.findNodes().length; i < len; i++) {
+        answers.findNodes()[i].should.equal($('li')[i]);
+      }
     });
 
     it('should find body', function() {
-    
+      answers.findBody().should.equal($('body')[0]);
     });
 
     it('should find attribute', function() {
-      ['e.getAttribute("foo")'].should.include(answers.findAttribute);
+      answers.findAttribute().should.equal($('#el-1-4').attr('class'));
     });
 
     it('should find data attribute', function() {

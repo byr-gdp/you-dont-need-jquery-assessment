@@ -29,15 +29,23 @@ exports.answers = {
 
   // Find nodes
   // jQuery: $el.find('li');
-  findNodes: 'el.querySelectorAll("li")',
+  findNodes: function() {
+    return document.querySelectorAll('li');
+  },
 
   // Find body
   // jQuery: $('body');
-  findBody: 'document.body',
+  findBody: function() {
+    return document.body;    
+  },
 
   // Find Attribute
   // jQuery: $el.attr('foo');
-  findAttribute: '',
+  findAttribute: function() {
+    var el = document.getElementById('el-1-4');
+    return el.getAttribute('class');
+  },
+
 
   // Find data attribute
   // jQuery: $el.data('foo');
